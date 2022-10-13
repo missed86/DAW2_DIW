@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaitPlaying</title>
+    <script src="https://kit.fontawesome.com/8d830fca42.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #000000;
+            --color-main: #4614EB;
+            --color-text: #FFFFFF;
+            --color-secondary: #6B43EF;
+        }
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: Roboto;
+        }
+        .logo {
+            font-size: 20px;
+            font-family: Titillium Web;
+            border-radius: 10px;
+            background-color: var(--color-main);
+            vertical-align: middle;
+            padding: 20px 15px;
+            font-weight: bold;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu-superior ul li{
+            padding: 2px;
+            margin: 0 10px;
+            display: inline-block;
+            text-align: center;
+        }
+        .menu-superior .active {
+            border-bottom: 3px solid var(--color-main);
+        }
+        .login {
+            padding: 20px 30px !important;
+            background-color: var(--color-secondary);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        main {
+            max-width: fit-content;
+            text-align: center;
+            margin: 20px auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            align-items: center;
+        }
+        main img {
+            max-width: 200px;
+            margin: 20px;
+            box-shadow: 5px 5px 0px 0px var(--color-secondary);
+        }
+        .floating {
+            position:fixed;
+            bottom: 0;
+            right: 0;
+            float: right;
+            padding: 10px 10px;
+            background-color: #000000;
+        }
+        .floating .color {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fa-solid fa-xl fa-gamepad"></i> WaitPlaying</div>
+        <nav class="menu-superior">
+            <ul>
+                <li class="active">Home</li>
+                <li>Gallery</li>
+                <li>Projects</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li class="login">login</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="gallery">
+        <img src="img/1.jpg" alt="" srcset="">
+        <img src="img/2.jpg" alt="" srcset="">
+        <img src="img/3.jpg" alt="" srcset="">
+        <img src="img/4.jpg" alt="" srcset="">
+        <img src="img/5.jpg" alt="" srcset="">
+        <img src="img/6.jpg" alt="" srcset="">
+    </main>
+    <div class="floating">
+        <div class="color" style="background-color: #4614EB;"></div>
+        <div class="color" style="background-color: #6B43EF;"></div>
+    </div>
+</body>
+</html>
