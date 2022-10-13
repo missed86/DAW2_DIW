@@ -7,7 +7,7 @@
     <title>WaitPlaying</title>
     <script src="https://kit.fontawesome.com/8d830fca42.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700;900&family=Rubik:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700;900&family=Rubik:wght@100;300;400;500;700;900&family=Lexend:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
             --color-bg: #000000;
@@ -18,9 +18,10 @@
         body {
             background-color: var(--color-bg);
             color: var(--color-text);
-            font-family: Rubik;
+            /* font-family: Rubik; */
             /* font-family: Roboto; */
             /* font-family: Nunito; */
+            font-family: Lexend;
         }
         .logo {
             font-size: 20px;
@@ -52,9 +53,36 @@
             font-weight: bold;
         }
         main {
+            width: 800px;
+            /* background-color: #4614EB; */
+            margin: 20px auto 0 auto;
+            display: flex;
+        }
+        main .content {
+            margin-left:20px;
+        }
+        main .cover {
+            text-align: center;
+        }
+        .cover button {
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+            width: calc(100% - 20px);
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        fieldset {
+            border-color: var(--color-secondary);
+
+        }
+        h3{
+            font-style: italic;
+        }
+        .gallery {
             max-width: fit-content;
             text-align: center;
-            margin: 20px auto 0 auto;
+            
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -65,7 +93,7 @@
         main img {
             max-width: 200px;
             margin: 20px;
-            box-shadow: 5px 5px 0px 0px var(--color-secondary);
+            /* box-shadow: 5px 5px 0px 0px var(--color-secondary); */
         }
         .floating {
             position:fixed;
@@ -96,17 +124,26 @@
             </ul>
         </nav>
     </header>
-    <main class="gallery">
-        <img src="img/1.jpg" alt="" srcset="">
-        <img src="img/2.jpg" alt="" srcset="">
-        <img src="img/3.jpg" alt="" srcset="">
-        <img src="img/4.jpg" alt="" srcset="">
-        <img src="img/5.jpg" alt="" srcset="">
-        <img src="img/6.jpg" alt="" srcset="">
+    <main>
+        <div class="cover">
+            <img src="img/1.png" alt="" srcset="">
+            <button>Seguir</button>
+        </div>
+        <div class="content">
+            <h1>God of War Ragnarök</h1>
+            <h2>9 de Noviembre de 2022</h2>
+            <h3>SIE Santa Monica Studio</h3>
+            <fieldset>
+                <legend>Acerca de</legend>
+                <p><b>Género:</b> Aventura, Hack and Slash</p>
+                <p><b>Plataformas:</b> Playstation 4, Playstation 5</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui, tempore sunt eum quia dolore reiciendis non assumenda provident? Veritatis?</p>
+            </fieldset>
+        </div>
     </main>
-    <div class="floating">
+    <!-- <div class="floating">
         <div class="color" style="background-color: #4614EB;"></div>
         <div class="color" style="background-color: #6B43EF;"></div>
-    </div>
+    </div> -->
 </body>
 </html>
