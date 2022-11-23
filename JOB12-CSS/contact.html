@@ -1,0 +1,111 @@
+<!-- 
+4 vistas conectadas
+Formulario con validaciones en cliente
+Gestión de tipografia y colores con CSS
+Funcionalidades CSS para diferenciarse: Gradientes, sombreas, flex, animaciones, ...
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WaitPlaying</title>
+		<!-- <script src="https://kit.fontawesome.com/8d830fca42.js" crossorigin="anonymous"></script> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700;900&family=Rubik:wght@100;300;400;500;700;900&family=Lexend:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="img/logo3.png" alt="" srcset="" /> WaitPlaying
+			</div>
+			<nav class="menu-superior">
+				<ul>
+					<li>
+						<a href="index.html"
+							><i class="fi fi-rr-home"></i> <span>Home</span></a
+						>
+					</li>
+					<li>
+						<a href="gallery.html"
+							><i class="fi fi-rr-gallery"></i> <span>Gallery</span></a
+						>
+					</li>
+					<li>
+						<a href="project.html"
+							><i class="fi fi-rr-edit-alt"></i> <span>Projects</span></a
+						>
+					</li>
+					<li class="active">
+						<a href="contact.html"
+							><i class="fi fi-rr-envelope"></i> <span>Contact</span></a
+						>
+					</li>
+					<li class="login"><a>login</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="form">
+				<form onsubmit="return false;">
+					<h1>Formulario de contacto</h1>
+					<fieldset class="grupo">
+						<!-- Campo do nombre com legenda "nombre" e css de classe "campo" -->
+						<div class="campo">
+							<label for="nombre"><strong>Nombre</strong></label>
+							<input type="text" name="nombre" id="nombre" required />
+						</div>
+
+						<!-- Campo do apellidos com legenda "apellidos" e css de classe "campo" -->
+						<div class="campo">
+							<label for="apellidos"><strong>Apellidos</strong></label>
+							<input type="text" name="apellidos" id="apellidos" required />
+						</div>
+					</fieldset>
+					<fieldset class="grupo">
+						<!-- Campo de email com-->
+						<div class="campo">
+							<label for="email"><strong>Email</strong></label>
+							<input type="email" name="email" id="email" required />
+						</div>
+					</fieldset>
+
+					<fieldset class="grupo">
+						<!-- Caixa de texto -->
+						<div class="campo">
+							<br />
+							<label for="experiencia"
+								><strong
+									>Mensaje:
+								</strong></label
+							>
+							<textarea
+								rows="6"
+								style="width: 26em"
+								id="experiencia"
+								name="experiencia"
+							></textarea>
+						</div>
+					</fieldset>
+					<fieldset class="grupo">
+						<!-- Botão para enviar o formulário -->
+						<button class="boton" type="submit" onsubmit="">Enviar</button>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<!-- <div class="floating">
+        <div class="color" style="background-color: #4614EB;"></div>
+        <div class="color" style="background-color: #6B43EF;"></div>
+    </div> -->
+	</body>
+</html>
